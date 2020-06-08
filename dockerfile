@@ -37,10 +37,6 @@ RUN dpkg-divert --local --rename --add /sbin/initctl && \
     echo " " && \
     echo "########################################" && \
 
-    cd /home/appuser/GITHUB && \
-    git clone https://github.com/HarisfazillahJamel/docker-ubuntu-14.04-harden.git && \
-    cd && \
-    pwd
 
 # Hardening Initialization and Startup Script
 ADD hardening.sh /hardening.sh
